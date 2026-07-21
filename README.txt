@@ -5,11 +5,6 @@ AI PG & Hostel Management System
 Project Type:
 Frontend Prototype (AI using MERN Internship)
 
-Developed By:
-Hanifa Zeya  
-Danish Aslam
-Usman Farooqi
-
 -------------------------------------------
 Project Description
 -------------------------------------------
