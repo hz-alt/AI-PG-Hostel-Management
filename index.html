@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI PG & Hostel Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>🏨 AI PG & Hostel Management</h1>
+
+<p>Internship Project (AI using MERN)</p>
+
+<p id="dateTime"></p>
+
+<button class="dark-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</header>
+
+<div class="container">
+
+<div class="stats">
+
+<div class="card">
+<h2 id="totalRooms">20</h2>
+<p>Total Rooms</p>
+</div>
+
+<div class="card">
+<h2 id="availableRooms">12</h2>
+<p>Available Rooms</p>
+</div>
+
+<div class="card">
+<h2 id="occupiedRooms">8</h2>
+<p>Occupied Rooms</p>
+</div>
+
+<div class="card">
+<h2 id="totalStudents">0</h2>
+<p>Total Students</p>
+</div>
+
+</div>
+
+<div class="progress-box">
+
+<h3>Hostel Occupancy</h3>
+
+<div class="progress">
+
+<div id="progressFill" class="progress-fill"></div>
+
+</div>
+
+<p id="occupancyText">40% Occupied</p>
+
+</div>
+
+<div class="form-section">
+
+<h2>Add Student</h2>
+
+<input
+type="text"
+id="studentName"
+placeholder="Enter Student Name">
+
+<select id="roomSelect">
+
+<option value="101">Room 101</option>
+
+<option value="102">Room 102</option>
+
+<option value="103">Room 103</option>
+
+<option value="104">Room 104</option>
+
+</select>
+
+<button onclick="addStudent()">
+
+➕ Add Student
+
+</button>
+
+<button onclick="aiSuggest()">
+
+🤖 AI Suggest Best Room
+
+</button>
+
+<div id="aiResult"></div>
+
+</div>
+
+<div class="search-section">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Search Student..."
+onkeyup="searchStudent()">
+
+</div>
+
+<div class="student-section">
+
+<h2>Student List</h2>
+
+<ul id="studentList"></ul>
+
+</div>
+
+<h2 style="margin-top:40px;">🏠 Room Status</h2>
+
+<div class="room-container">
+
+<div class="room available">
+
+<h3>Room 101</h3>
+
+<p>Available</p>
+
+</div>
+
+<div class="room occupied">
+
+<h3>Room 102</h3>
+
+<p>Occupied</p>
+
+</div>
+
+<div class="room available">
+
+<h3>Room 103</h3>
+
+<p>Available</p>
+
+</div>
+
+<div class="room occupied">
+
+<h3>Room 104</h3>
+
+<p>Occupied</p>
+
+</div>
+
+</div>
+
+<div class="notice">
+
+<h2>📢 Notice Board</h2>
+
+<ul>
+
+<li>WiFi Maintenance on Sunday</li>
+
+<li>Hostel Gate closes at 10 PM</li>
+
+<li>Last Fee Date : 30 July</li>
+
+<li>Keep Hostel Clean</li>
+
+</ul>
+
+</div>
+
+<div class="emergency">
+
+<h2>📞 Emergency Contacts</h2>
+
+<p>👮 Warden : 9876543210</p>
+
+<p>🛡 Security : 9999999999</p>
+
+<p>🚑 Ambulance : 108</p>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 AI PG & Hostel Management
+
+<br>
+
+Developed By Hanifa Zeya
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
